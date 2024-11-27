@@ -10,6 +10,8 @@ WOPR CLI is a command-line interface tool for managing and interacting with the 
 
 ## Installation
 
+Find you way to an API key and server URL :) somewhere here ==> https://sdsa.ai
+
 ```
 python3 -m pip install -r requirements.txt
 ```
