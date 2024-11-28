@@ -105,8 +105,8 @@ class WOPR:
             self.state = {"phase": "ready"}
             # console.print("\n[bold green]Phase: LOGIN -> READY[/bold green]")
         else:
-            console.print("\n[indianred1]IDENTIFICATION NOT RECOGNIZED BY SYSTEM[/indianred1]")
-            console.print("[indianred1]--CONNECTION TERMINATED--[/indianred1]")
+            console.print("\n[red]IDENTIFICATION NOT RECOGNIZED BY SYSTEM[/red]")
+            console.print("[red]--CONNECTION TERMINATED--[/red]")
             sys.exit(1)
 
     def ready_phase(self):
