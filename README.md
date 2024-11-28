@@ -1,6 +1,6 @@
 # WOPR CLI
 
-WOPR CLI is a command-line interface tool for managing and interacting with the WOPR system.
+CLI to play with /dev/agents easter egg
 ![wopr-cli](image.png)
 
 ## Features
