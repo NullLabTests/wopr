@@ -1,6 +1,7 @@
 # WOPR CLI
 
 WOPR CLI is a command-line interface tool for managing and interacting with the WOPR system.
+![wopr-cli](image.png)
 
 ## Features
 

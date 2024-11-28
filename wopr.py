@@ -88,7 +88,7 @@ class WOPR:
             "WOPR", "Loading...", "", ""
         ]))
         self.state = {"phase": "login"}
-        console.print("[bold green]Phase: INIT -> LOGIN[/bold green]")
+        # console.print("[bold green]Phase: INIT -> LOGIN[/bold green]")
         console.print("LOGON:", end=" ")
 
     def login_phase(self):
@@ -103,7 +103,7 @@ class WOPR:
                 "ON JUNE 23, 1973?",
             ]))
             self.state = {"phase": "ready"}
-            console.print("\n[bold green]Phase: LOGIN -> READY[/bold green]")
+            # console.print("\n[bold green]Phase: LOGIN -> READY[/bold green]")
         else:
             console.print("\n[indianred1]IDENTIFICATION NOT RECOGNIZED BY SYSTEM[/indianred1]")
             console.print("[indianred1]--CONNECTION TERMINATED--[/indianred1]")
