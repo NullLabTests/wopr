@@ -146,5 +146,9 @@ class WOPR:
             sys.exit(0)
 
 if __name__ == "__main__":
+    if not WOPR_KEY or not API_URL:
+        console.print("[red]WOPR_KEY or WOPR_API_URL environment variables not set.[/red]")
+        console.print("[blue]Want to find one? go hunting at https://sdsa.ai[/blue]")
+        sys.exit(1)
     wopr = WOPR()
     wopr.run()
