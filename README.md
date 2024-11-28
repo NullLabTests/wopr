@@ -13,7 +13,15 @@ WOPR CLI is a command-line interface tool for managing and interacting with the 
 
 Find you way to an API key and server URL :) somewhere here ==> https://sdsa.ai
 
+Add those 2 environment variables, you can put them into a `.env` file.
 ```
+WOPR_KEY=key_here
+WOPR_API_URL=url_here
+```
+
+```
+virtualenv .venv
+source .venv/bin/activate
 python3 -m pip install -r requirements.txt
 ```
 
