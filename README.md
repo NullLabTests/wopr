@@ -4,9 +4,9 @@ WOPR CLI is a command-line interface tool for managing and interacting with the 
 
 ## Features
 
-- Easy to use commands for managing WOPR
-- Integration with various WOPR services
-- Extensible and customizable
+- Play with `/private/agents/wopr` (from the brilliant team at sdsa.ai 🌟) directly in your terminal
+- Mimic the user experience of the original online sdsa.ai website
+
 
 ## Installation
 
