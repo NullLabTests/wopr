@@ -1,9 +1,3 @@
-from dotenv import find_dotenv, load_dotenv
-
-ENV_FILE = find_dotenv()
-if ENV_FILE:
-    load_dotenv(ENV_FILE)
-
 import json
 import os
 import sys
@@ -15,8 +9,8 @@ from rich.prompt import Prompt
 from rich.console import Console
 
 # Constants
-WOPR_KEY = os.getenv("WOPR_KEY")
-API_URL = os.getenv("WOPR_API_URL")
+WOPR_KEY = "dc55c2dbd26f87d653e2dcc1b496dc65" # 😱 sorry github secret scanning agent, you have to deal with it
+WOPR_API_URL = "https://wopr.us.davidsingleton.org/game/message" # 😨 @dps, prepare for a tsunami you can't even imagine
 SESSION_FILE = "wopr_session.json"
 
 # Initialize Rich Console
@@ -51,7 +45,7 @@ def make_game_request(message: str, session_id: Optional[str] = None) -> request
         "session_id": session_id,
     }
     try:
-        response = requests.post(API_URL, headers=headers, json=body)
+        response = requests.post(WOPR_API_URL, headers=headers, json=body)
         return response
     except requests.RequestException as e:
         console.print(f"[red]Error communicating with WOPR API: {e}[/red]")
@@ -146,9 +140,5 @@ class WOPR:
             sys.exit(0)
 
 if __name__ == "__main__":
-    if not WOPR_KEY or not API_URL:
-        console.print("[red]WOPR_KEY or WOPR_API_URL environment variables not set.[/red]")
-        console.print("[blue]Want to find one? go hunting at https://sdsa.ai[/blue]")
-        sys.exit(1)
     wopr = WOPR()
     wopr.run()

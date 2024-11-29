@@ -11,14 +11,6 @@ CLI to play with /dev/agents easter egg
 
 ## Installation
 
-Find you way to an API key and server URL :) somewhere here ==> https://sdsa.ai
-
-Add those 2 environment variables, you can put them into a `.env` file.
-```
-WOPR_KEY=key_here
-WOPR_API_URL=url_here
-```
-
 ```
 virtualenv .venv
 source .venv/bin/activate
